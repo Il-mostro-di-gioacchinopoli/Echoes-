@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - ForumBoard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>ForumBoard</h1></header>
+  <main>
+    <h2>Accedi al tuo account</h2>
+    <form onsubmit="event.preventDefault(); document.getElementById('error').textContent = 'Utente non riconosciuto. Riprova.';">
+      <label>Nome utente: <input type="text" required></label><br><br>
+      <label>Password: <input type="password" required></label><br><br>
+      <button type="submit">Accedi</button>
+    </form>
+    <p id="error" style="color:red; margin-top:10px;"></p>
+  </main>
+  <footer>ForumBoard © 2025</footer>
+</body>
+</html>
